@@ -1,0 +1,77 @@
+body::before {
+  content: "";
+  position: fixed; 
+  left: 0;
+  right: 0; 
+  top: 0;
+  bottom: 0; 
+  z-index: -1; 
+  background: url(https://d1v9pyzt136u2g.cloudfront.net/blog/wp-content/uploads/2021/07/08111306/cult-cinema.jpeg) center / cover no-repeat;
+  filter: blur(5px);
+  
+}
+
+.movies-content {
+  width:100%;
+  margin:0 auto;
+  color: black;
+  margin-top: 20px;
+}
+.films_info {
+  height: 200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  justify-content: space-around;
+  background-color:rgba(16, 16, 16, 0.675);
+  border-radius:25px;
+  color: white;
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+img {
+  border-radius: 15px;
+}
+.filter-area,
+.form-control {
+  width: 300px;
+}
+.movies-filtration {
+  display: flex;
+  justify-content: space-around;
+}
+
+p {
+  display: none;
+  text-align: center;
+  animation: fade .5s linear forwards;
+}
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  div:hover p {
+    display: block;
+    cursor: pointer;
+  }
+  

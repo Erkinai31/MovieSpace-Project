@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .main{
+  
+      display: flex;
+      min-height:800px;
+      align-items:center;
+  }
+  .enter {
+    background-color: rgba(230, 230, 236, 0.728);
+    display: flex;
+    border-radius: 5%;
+    justify-content: space-around;
+    height: 400px;
+    width: 500px;
+    margin:0 auto;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  input {
+    padding: 10px;
+    width: 400px;
+    border:none;
+    border-radius: 15px;
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+  }
+  
+ .register_part{
+  text-align: center;
+ }
+ 
