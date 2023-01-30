@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MovieSpace-Project/static/css/main.bb5fb444.css",
-    "main.js": "/MovieSpace-Project/static/js/main.8afb197a.js",
+    "main.js": "/MovieSpace-Project/static/js/main.77a74e57.js",
     "static/media/glyphicons-halflings-regular.svg": "/MovieSpace-Project/static/media/glyphicons-halflings-regular.060b2710bdbbe3dfe48b.svg",
     "static/media/glyphicons-halflings-regular.ttf": "/MovieSpace-Project/static/media/glyphicons-halflings-regular.4692b9ec53fd5972caa2.ttf",
     "static/media/glyphicons-halflings-regular.woff": "/MovieSpace-Project/static/media/glyphicons-halflings-regular.82b1212e45a2bc35dd73.woff",
@@ -9,10 +9,10 @@
     "static/media/glyphicons-halflings-regular.woff2": "/MovieSpace-Project/static/media/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2",
     "index.html": "/MovieSpace-Project/index.html",
     "main.bb5fb444.css.map": "/MovieSpace-Project/static/css/main.bb5fb444.css.map",
-    "main.8afb197a.js.map": "/MovieSpace-Project/static/js/main.8afb197a.js.map"
+    "main.77a74e57.js.map": "/MovieSpace-Project/static/js/main.77a74e57.js.map"
   },
   "entrypoints": [
     "static/css/main.bb5fb444.css",
-    "static/js/main.8afb197a.js"
+    "static/js/main.77a74e57.js"
   ]
 }
