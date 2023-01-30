@@ -9,9 +9,9 @@ import MainSpace from "components/MainSpace/MainSpace";
 function App() {
   return (
     <div>
-      <Router>
-        <Routes basename="/MovieSpace-Project">
-          <Route path="/MovieSpace-Project" element={<Login />} />
+      <Router basename="/MovieSpace-Project">
+        <Routes>
+          <Route path="/" element={<Login />} />
           <Route path="/signUp" element={<SignUp/>} />
           <Route path="/mainSpace" element={<MainSpace />} />
         </Routes>
