@@ -31,7 +31,7 @@ const Login = () => {
         <FormInput title="Log in" handleClick={handleLogin} />
           <p>if you still don't have an account click on the bottom button</p>
          <div class="alert" role="alert">
-    <a href="/MovieSpace-Project/signUp" class="alert-link">Register</a>
+    <a href="/signUp" class="alert-link">Register</a>
           </div> 
         </div>
         </div>

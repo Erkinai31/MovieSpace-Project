@@ -10,10 +10,10 @@ function App() {
   return (
     <div>
       <Router>
-        <Routes>
+        <Routes basename="/MovieSpace-Project">
           <Route path="/MovieSpace-Project" element={<Login />} />
-          <Route path="/MovieSpace-Project/signUp" element={<SignUp/>} />
-          <Route path="/MovieSpace-Project/mainSpace" element={<MainSpace />} />
+          <Route path="/signUp" element={<SignUp/>} />
+          <Route path="/mainSpace" element={<MainSpace />} />
         </Routes>
       </Router>
     </div>
