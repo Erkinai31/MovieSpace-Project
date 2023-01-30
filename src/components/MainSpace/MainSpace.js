@@ -52,7 +52,7 @@ function MainSpace() {
       </div>
     </div>
   ) : (
-    navigate('/')
+    navigate('/MovieSpace-Project')
   )
 }
 

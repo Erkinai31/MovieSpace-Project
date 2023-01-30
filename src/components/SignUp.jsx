@@ -20,7 +20,7 @@ const SignUp = () => {
             token: user.accessToken,
           })
         );
-        navigate("/");
+        navigate("/MovieSpace-Project");
       })
       .catch(console.error);
   };
@@ -31,7 +31,7 @@ const SignUp = () => {
         <div>
           <FormInput title="Register" handleClick={handleRegister} />
           <div class="alert" role="alert">
-            <a href="/" class="alert-link">
+            <a href="/MovieSpace-Project" class="alert-link">
               I have an account
             </a>
           </div>
