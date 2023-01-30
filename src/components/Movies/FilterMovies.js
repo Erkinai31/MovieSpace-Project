@@ -6,7 +6,7 @@ export const FilterMovies = (props) => {
     
 
     return (
-        <div className="filter-area">
+        <div className="filter_area">
             <select name='isAvailable' onChange={onFilterValueChanged} class="form-control" id="exampleFormControlSelect1">
                 <option value='genre'>All</option>
                 <option value='Drama'>Drama</option>

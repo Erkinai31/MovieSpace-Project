@@ -11,25 +11,25 @@ body::before {
   
 }
 
-.movies-content {
+.movies_content {
   width:100%;
   margin:0 auto;
   color: black;
   margin-top: 20px;
 }
-.films_info {
+.movies_info {
   height: 200px;
   margin: 40px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
 }
-.card {
+.movies__card {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 300px;
-  height: 400px;
+  height: 440px;
   justify-content: space-around;
   background-color:rgba(16, 16, 16, 0.675);
   border-radius:25px;
@@ -44,19 +44,19 @@ body::before {
   margin: 0 auto;
   border-radius: 15px;
 }
-img {
+.card-img-top {
   border-radius: 15px;
 }
-.filter-area,
+.filter_area,
 .form-control {
   width: 300px;
 }
-.movies-filtration {
+.movies__filtration {
   display: flex;
   justify-content: space-around;
 }
 
-p {
+.card__text {
   display: none;
   text-align: center;
   animation: fade .5s linear forwards;
@@ -70,8 +70,17 @@ p {
     }
   }
   
-  div:hover p {
+  div:hover .card__text {
     display: block;
     cursor: pointer;
   }
+  
+  .fa {
+    padding-right: 9px;
+  }
+  .active {
+    color: rgb(162, 19, 19);
+  }
+  
+  
   

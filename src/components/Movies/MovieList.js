@@ -1,10 +1,12 @@
+import SkillItem from "./SkillItem";
+
 /* eslint-disable jsx-a11y/img-redundant-alt */
 function MovieList({ newProductList}) {
   return (
-    <div style={{ color: "black" }} className='body-content'>
-      <div className="films_info">
+    <div style={{ color: "black" }} className='movies'>
+      <div className="movies_info">
         {newProductList.map((elem) => (
-          <div className="card" key={elem.id}>
+          <div className="movies__card" key={elem.id}>
             <img
               src={elem.large_cover_image}
               width="250"
@@ -12,10 +14,12 @@ function MovieList({ newProductList}) {
               className="card-img-top"
               alt="Card image cap"
             />
-            <h4 class="card-title">{elem.title}</h4>
-            <div className="card-text">
+            <h4 class="card__title">{elem.title}</h4>
+            <SkillItem count_stars = {elem.rating}/>
+            <div className="card__text">
               <p>{elem.genres.join('/')}</p>
               <p>{elem.year}</p>
+              <p>{elem.rating}</p>
             </div>
           </div>
         ))}

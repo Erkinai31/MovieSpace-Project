@@ -26,7 +26,7 @@ const Login = () => {
 
   return (
     <div className="main">
-      <div className="enter">
+      <div className="main_content">
         <div className="register_part">
         <FormInput title="Log in" handleClick={handleLogin} />
           <p>if you still don't have an account click on the bottom button</p>

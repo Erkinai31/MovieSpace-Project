@@ -16,11 +16,11 @@ const FormInput = ({ title, handleClick}) => {
   }
 
   return (
-    <div>
-      <div>
+    <div className="form">
+      <div className="form_content">
         <h1>{title}</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="login">
+          <div className="form__login">
             <input
               type="email"
               required={true}

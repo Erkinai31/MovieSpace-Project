@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { FilterMovies } from "./FilterMovies";
+import { FilterMovies } from "../Movies/FilterMovies";
 import "./MainSpace.css";
-import MovieList from "./MovieList";
+import MovieList from "../Movies/MovieList";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "hooks/use-auth";
 import {useDispatch} from 'react-redux'
@@ -38,9 +38,9 @@ function MainSpace() {
   }
 
   return isAuth ? (
-    <div className="body-content">
-      <div className="movies-content">
-        <div className="movies-filtration">
+    <div className="movies">
+      <div className="movies_content">
+        <div className="movies__filtration">
           <FilterMovies filterValueSelected={onFilterValueSelected} />
           <button onClick={() => dispatch(removeUser())} class="btn btn-info">
             Log out from {email}

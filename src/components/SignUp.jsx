@@ -27,13 +27,14 @@ const SignUp = () => {
 
   return (
     <div className="main">
-      <div className="enter">
+      <div className="main_content">
         <div>
           <FormInput title="Register" handleClick={handleRegister} />
           <div class="alert" role="alert">
-    <a href="/" class="alert-link" >I have an account</a>
-</div>
-         
+            <a href="/" class="alert-link">
+              I have an account
+            </a>
+          </div>
         </div>
       </div>
     </div>
