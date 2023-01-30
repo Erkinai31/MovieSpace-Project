@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Login } from "components/Login";
 import { SignUp } from "components/SignUp";
 import MainSpace from "components/MainSpace/MainSpace";
@@ -9,13 +9,13 @@ import MainSpace from "components/MainSpace/MainSpace";
 function App() {
   return (
     <div>
-      <HashRouter>
+      <Router>
         <Routes>
           <Route path="/MovieSpace-Project" element={<Login />} />
-          <Route path="/signUp" element={<SignUp/>} />
-          <Route path="/mainSpace" element={<MainSpace />} />
+          <Route path="/MovieSpace-Project/signUp" element={<SignUp/>} />
+          <Route path="/MovieSpace-Project/mainSpace" element={<MainSpace />} />
         </Routes>
-      </HashRouter>
+      </Router>
     </div>
   );
 }
