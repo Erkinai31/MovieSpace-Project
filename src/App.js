@@ -11,7 +11,7 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/Movies-registry-login-filter-Project" element={<Login />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/mainSpace" element={<MainSpace />} />
         </Routes>
