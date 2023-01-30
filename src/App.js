@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/MovieSpace-Project" element={<Login />} />
-          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/signUp" element={<SignUp/>} />
           <Route path="/mainSpace" element={<MainSpace />} />
         </Routes>
       </Router>
