@@ -20,7 +20,7 @@ const SignUp = () => {
             token: user.accessToken,
           })
         );
-        navigate("/MovieSpace-Project");
+        navigate("/");
       })
       .catch(console.error);
   };
