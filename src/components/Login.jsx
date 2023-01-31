@@ -31,7 +31,7 @@ const Login = () => {
         <FormInput title="Log in" handleClick={handleLogin} />
           <p>if you still don't have an account click on the bottom button</p>
          <div class="alert" role="alert">
-    <Link to={'/signUp'} class="alert-link">Register</Link>
+    <Link to={"/signUp"} class="alert-link">Register</Link>
           </div> 
         </div>
         </div>

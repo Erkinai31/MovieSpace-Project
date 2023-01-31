@@ -31,7 +31,7 @@ const SignUp = () => {
         <div>
           <FormInput title="Register" handleClick={handleRegister} />
           <div class="alert" role="alert">
-            <Link to="/" class="alert-link">
+            <Link to={"/"} class="alert-link">
               I have an account
             </Link>
           </div>
