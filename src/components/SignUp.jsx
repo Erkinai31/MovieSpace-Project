@@ -31,7 +31,7 @@ const SignUp = () => {
         <div>
           <FormInput title="Register" handleClick={handleRegister} />
           <div class="alert" role="alert">
-            <a href="/MovieSpace-Project" class="alert-link">
+            <a href="/" class="alert-link">
               I have an account
             </a>
           </div>
