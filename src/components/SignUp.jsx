@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { setUser } from "store/slice/userSlice";
 import { FormInput } from "./Form/FormInput";
@@ -31,9 +31,9 @@ const SignUp = () => {
         <div>
           <FormInput title="Register" handleClick={handleRegister} />
           <div class="alert" role="alert">
-            <a href="/" class="alert-link">
+            <Link to="/" class="alert-link">
               I have an account
-            </a>
+            </Link>
           </div>
         </div>
       </div>
