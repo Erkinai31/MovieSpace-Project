@@ -19,7 +19,7 @@ const Login = () => {
             token: user.accessToken,
           })
         );
-        navigate("/MovieSpace-Project/mainSpace");
+        navigate("/mainSpace");
       })
       .catch(() => console.error);
   };
