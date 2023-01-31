@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FormInput } from "./Form/FormInput";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { setUser } from "store/slice/userSlice";
@@ -31,7 +31,7 @@ const Login = () => {
         <FormInput title="Log in" handleClick={handleLogin} />
           <p>if you still don't have an account click on the bottom button</p>
          <div class="alert" role="alert">
-    <a href="/MovieSpace-Project/signUp" class="alert-link">Register</a>
+    <Link to={'/signUp'} class="alert-link">Register</Link>
           </div> 
         </div>
         </div>
