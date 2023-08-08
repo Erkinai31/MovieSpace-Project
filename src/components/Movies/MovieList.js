@@ -1,4 +1,5 @@
 import SkillItem from "./SkillItem";
+import {Link} from 'react-router-dom';
 
 /* eslint-disable jsx-a11y/img-redundant-alt */
 function MovieList({ newProductList}) {
@@ -6,22 +7,29 @@ function MovieList({ newProductList}) {
     <div style={{ color: "black" }} className='movies'>
       <div className="movies_info">
         {newProductList.map((elem) => (
-          <div className="movies__card" key={elem.id}>
+         
+            <div className="movies__card" key={elem.id}>
             <img
               src={elem.large_cover_image}
-              width="250"
-              height="250"
+              width="200"
+              height="300"
               className="card-img-top"
               alt="Card image cap"
             />
-            <h4 class="card__title">{elem.title}</h4>
-            <SkillItem count_stars = {elem.rating}/>
             <div className="card__text">
-              <p>{elem.genres.join('/')}</p>
-              <p>{elem.year}</p>
-              <p>{elem.rating}</p>
+                {elem.genres && elem.genres.length > 0 && (
+                  <p>Genre: {elem.genres.join('/')}</p>
+                )}
+              <p>Year: {elem.year}</p> 
+              <p>Rating: {elem.rating}</p>
+              <Link to={`/movie/${elem.id}`}>
+              <button class='btn btn-success'>Details</button> 
+              </Link>
             </div>
+            <h4 class="card__title">{elem.title}</h4>
           </div>
+         
+          
         ))}
       </div>
     </div>

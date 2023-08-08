@@ -42,7 +42,7 @@ function MainSpace() {
       <div className="movies_content">
         <div className="movies__filtration">
           <FilterMovies filterValueSelected={onFilterValueSelected} />
-          <button onClick={() => dispatch(removeUser())} class="btn btn-info">
+          <button onClick={() => dispatch(removeUser())} class="btn btn-primary">
             Log out from {email}
           </button>
         </div>
