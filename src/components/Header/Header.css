@@ -1,0 +1,9 @@
+.movies__filtration {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 30px;
+  }
+.filter_area{
+  padding:10px 30px;
+}

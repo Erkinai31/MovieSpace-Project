@@ -1,19 +1,12 @@
-import { useEffect, useState } from "react";
-import { FilterMovies } from "../Movies/FilterMovies";
+import Header from 'components/Header/Header';
+import MovieList from 'components/Movies/MovieList';
+import React, { useEffect, useState } from 'react';
+import { FilterMovies } from '../Filter/FilterMovies'; // Make sure to provide the correct import path
 import "./MainSpace.css";
-import MovieList from "../Movies/MovieList";
-import { useNavigate } from "react-router-dom";
-import { useAuth } from "hooks/use-auth";
-import {useDispatch} from 'react-redux'
-import {removeUser} from 'store/slice/userSlice'
 
-function MainSpace() {
-  const dispatch = useDispatch();
-  const { isAuth, email } = useAuth();
-
-  const navigate = useNavigate();
-
+const MainSpace = () => {
   const [films, setFilms] = useState([]);
+  const [selectedGenre, setSelectedGenre] = useState("All"); // Default to "All" genres
 
   useEffect(() => {
     let url = "https://yts.mx/api/v2/list_movies.json";
@@ -22,38 +15,27 @@ function MainSpace() {
       .then((data) => setFilms(data.data.movies));
   }, []);
 
-  const [filterText, setFilterText] = useState("all");
+  const handleGenreChange = (genre) => {
+    setSelectedGenre(genre);
+  };
 
   const filteredProductList = films.filter((product) => {
-    if (filterText === "all") {
-      return product;
+    if (selectedGenre === "All") {
+      return true; // Show all movies when "All" is selected
     } else {
-      return product.genres.includes(filterText);
+      return product.genres.includes(selectedGenre);
     }
   });
 
-
-  function onFilterValueSelected(filterValue) {
-    setFilterText(filterValue);
-  }
-
-  return isAuth ? (
+  return (
     <div className="movies">
       <div className="movies_content">
-        <div className="movies__filtration">
-          <FilterMovies filterValueSelected={onFilterValueSelected} />
-          <button onClick={() => dispatch(removeUser())} class="btn btn-primary">
-            Log out from {email}
-          </button>
-        </div>
-        <MovieList
-          newProductList={filteredProductList}
-        />
+        <Header />
+        <FilterMovies filterValueSelected={handleGenreChange} />
+        <MovieList newProductList={filteredProductList} />
       </div>
     </div>
-  ) : (
-    navigate('/')
-  )
-}
+  );
+};
 
 export default MainSpace;
